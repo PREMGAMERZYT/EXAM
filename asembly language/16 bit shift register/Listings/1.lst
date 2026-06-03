@@ -1,0 +1,37 @@
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 15:04:24 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 1.a51 SET(SMALL) DEBUG PRINT(.\Listings\1.lst) OBJECT(.\Objects\1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0000h
+0000 C3                2             clr c
+0001 901234            3             mov dptr,#1234h
+0004 E582              4             mov a,dpl
+0006 33                5             rlc a
+0007 F582              6             mov dpl,a
+0009 E583              7             mov a,dph
+000B 33                8             rlc a
+000C F583              9             mov dph,a
+000E 80FE             10             loop:sjmp loop
+                      11             end
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 15:04:24 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DPH. . . . . . . .  D ADDR   0083H   A   
+DPL. . . . . . . .  D ADDR   0082H   A   
+LOOP . . . . . . .  C ADDR   000EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
