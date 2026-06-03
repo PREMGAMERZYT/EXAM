@@ -1,0 +1,21 @@
+#include<reg51.h>
+
+
+void delay(unsigned int time);
+	void main(){
+	while(1) {
+		P0 = 0xFF;
+		delay(5);
+		P0 = 0x00;
+		delay(1);
+	}
+	}
+	
+	void delay (unsigned int time) {
+		unsigned int i,j;
+		for(i = 0;i<time;i++){
+		
+			for(j = 0;j<1275;j++);
+		}
+		
+	}
