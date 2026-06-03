@@ -3,16 +3,15 @@
 int main()
 {
 
-    int n , i; 
+    int n, i;
+    long int fact = 1;
 
-    long int fact = 1; 
-
-    printf("please enter the number in which factorial you want to find \n"); 
-    scanf("%d", &n); 
+    printf("please enter the number which you want to find factorial \n");
+    scanf("%d", &n);
 
     if (n <= 0)
     {
-        printf("The Number Is Invalid Please Enter The Number Above 0 \n");
+        printf("The number is invalid \n");
     }
     else
     {
@@ -20,7 +19,7 @@ int main()
         {
             fact = fact * i;
         }
-        printf("The Factorial Number Of The Given Number %d is %d", n, fact);
+        printf("The Factorial of the given number %d is %d", n, fact);
     }
 
     return 0;
