@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int a, b, c;
+
+    scanf("%d %d %d", &a, &b, &c);
+
+    // a = 1000 b = 1000 c = 1000
+
+    if (a > b && a > c)
+    {
+        printf("The Number %d Is Graters Number ", a);
+    }
+    else if (b > a && b > c)
+    {
+        printf("The Number %d Is the Gratest Number", b);
+    }
+    else if (c > a && c > b)
+    {
+        printf("The Number %d Is The Gratest Number", c);
+    }
+    else
+    {
+        printf("invlaid");
+    }
+
+    return 0;
+}
