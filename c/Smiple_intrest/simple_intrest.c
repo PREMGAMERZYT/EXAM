@@ -2,22 +2,18 @@
 
 int main()
 {
+    float p, r, t, si;
 
-    float principle_amount;
-    float time;
-    float rate_of_intrest;
-    float Simple_Intrest;
+    printf("please enter the principle amount \n");
+    scanf("%f", &p);
+    printf("enter The rate Of intrest \n");
+    scanf("%f", &r);
+    printf("please enter the time period \n");
+    scanf("%f", &t);
 
-    printf("Enter The Principle Amount \n");
-    scanf("%f", &principle_amount);
-    printf("Enter The Time Period \n");
-    scanf("%f", &time);
-    printf("Enter The rate of Intrest \n");
-    scanf("%f", &rate_of_intrest);
+    si = (p * t * r) / 100;
 
-    Simple_Intrest = (principle_amount * rate_of_intrest * time) / 100;
-
-    printf("The Simple Intrest Of The Given Data Is %0.2f \n", Simple_Intrest);
+    printf("the simple intrets of the given data is %0.2f", si);
 
     return 0;
 }
