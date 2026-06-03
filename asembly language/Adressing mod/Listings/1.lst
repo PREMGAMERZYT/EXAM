@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 14:21:40 PAGE     1
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 20:45:34 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -8,13 +8,16 @@ ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 1.a51 SET(SMALL) DEBUG PRINT(.\
 LOC  OBJ            LINE     SOURCE
 
 0000                   1     ORG 0000h
-0000 7851              2             mov r0,#51h
-0002 7A03              3             mov r2,#03h
-0004 E550              4             mov a,50h
-0006 2A                5             add a,r2
-0007 F6                6             mov @r0,a
-*** WARNING #A41 IN 6 (1.a51, LINE 6): MISSING 'END' STATEMENT
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 14:21:40 PAGE     2
+                       2             
+0000 7851              3             mov r0,#51h
+0002 7902              4             mov r1,#02h
+0004 E550              5             mov a,50h
+0006 29                6             add a,r1
+0007 F6                7             mov @r0,a
+0008 80FE              8             loop:sjmp loop
+                       9             end
+                                     
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 20:45:34 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
@@ -22,9 +25,10 @@ SYMBOL TABLE LISTING
 
 N A M E             T Y P E  V A L U E   ATTRIBUTES
 
+LOOP . . . . . . .  C ADDR   0008H   A   
 
 
 REGISTER BANK(S) USED: 0 
 
 
-ASSEMBLY COMPLETE.  1 WARNING(S), 0 ERROR(S)
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

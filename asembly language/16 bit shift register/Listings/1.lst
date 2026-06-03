@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 15:04:24 PAGE     1
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 21:07:16 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -7,7 +7,7 @@ ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE 1.a51 SET(SMALL) DEBUG PRINT(.\
 
 LOC  OBJ            LINE     SOURCE
 
-0000                   1     org 0000h
+0000                   1     ORG 0000h
 0000 C3                2             clr c
 0001 901234            3             mov dptr,#1234h
 0004 E582              4             mov a,dpl
@@ -18,7 +18,7 @@ LOC  OBJ            LINE     SOURCE
 000C F583              9             mov dph,a
 000E 80FE             10             loop:sjmp loop
                       11             end
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 15:04:24 PAGE     2
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 21:07:16 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------

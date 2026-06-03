@@ -1,4 +1,4 @@
-org 0000h
+ORG 0000h
 	clr c
 	mov dptr,#1234h
 	mov a,dpl

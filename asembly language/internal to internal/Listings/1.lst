@@ -1,4 +1,4 @@
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 14:36:12 PAGE     1
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 21:17:30 PAGE     1
 
 
 MACRO ASSEMBLER A51 V8.2.7.0
@@ -9,18 +9,19 @@ LOC  OBJ            LINE     SOURCE
 
 0000                   1     ORG 0000h
 0000 7850              2             mov r0,#50h
-0002 7960              3              mov r1,#60h
-0004 E6                4              mov a,@r0
-0005 FB                5              mov r3,a
-0006 08                6              inc r0
-0007 E6                7              back:mov a,@r0
-0008 F7                8              mov @r1,a
-0009 08                9              inc r0
-000A 09               10              inc r1
-000B DBFA             11              djnz r3,back
-000D 80FE             12              loop:sjmp loop
-                      13             end
-A51 MACRO ASSEMBLER  1                                                                    06/03/2026 14:36:12 PAGE     2
+0002 7960              3             mov r1,#60h
+0004 E6                4             mov a,@r0
+0005 FB                5             mov r3,a
+0006 08                6             inc r0
+0007 E6                7             back:mov a,@r0
+0008 F7                8             mov @r1,a
+0009 08                9             inc r0
+000A 09               10             inc r1
+000B DBFA             11             djnz r3,back
+000D 80FE             12             loop:sjmp loop
+                      13     end     
+                                     
+A51 MACRO ASSEMBLER  1                                                                    06/03/2026 21:17:30 PAGE     2
 
 SYMBOL TABLE LISTING
 ------ ----- -------
