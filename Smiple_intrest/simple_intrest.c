@@ -3,21 +3,21 @@
 int main()
 {
 
-    float p;
-    float t;
-    float r;
-    float SI;
+    float principle_amount;
+    float time;
+    float rate_of_intrest;
+    float Simple_Intrest;
 
-    printf("Enter The Principle Amount");
-    scanf("%d", &p);
-    printf("Enter The Time Period");
-    scanf("%d", &t);
-    printf("Enter The rate of Intrest");
-    scanf("%d", &r);
+    printf("Enter The Principle Amount \n");
+    scanf("%f", &principle_amount);
+    printf("Enter The Time Period \n");
+    scanf("%f", &time);
+    printf("Enter The rate of Intrest \n");
+    scanf("%f", &rate_of_intrest);
 
-    SI = (p * r * t) / 100;
+    Simple_Intrest = (principle_amount * rate_of_intrest * time) / 100;
 
-    printf("The Simple Intrest Of The Given Data Is %d", SI);
+    printf("The Simple Intrest Of The Given Data Is %0.2f \n", Simple_Intrest);
 
     return 0;
 }
