@@ -7,8 +7,6 @@ int main()
 
     scanf("%d %d %d", &a, &b, &c);
 
-    // a = 1000 b = 1000 c = 1000
-
     if (a > b && a > c)
     {
         printf("The Number %d Is Graters Number ", a);
