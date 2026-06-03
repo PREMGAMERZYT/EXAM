@@ -3,12 +3,12 @@
 int main()
 {
 
-    int n , i; //5
+    int n , i; 
 
-    long int fact = 1; //120
+    long int fact = 1; 
 
-    printf("please enter the number in which factorial you want to find \n"); //5
-    scanf("%d", &n); //5
+    printf("please enter the number in which factorial you want to find \n"); 
+    scanf("%d", &n); 
 
     if (n <= 0)
     {
@@ -16,7 +16,7 @@ int main()
     }
     else
     {
-        for (i = n; i > 0; i--) //0
+        for (i = n; i > 0; i--)
         {
             fact = fact * i;
         }
