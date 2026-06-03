@@ -3,20 +3,20 @@
 int main()
 {
 
-    int n, i;
+    int n , i; //5
 
-    long int fact = 1;
+    long int fact = 1; //120
 
-    printf("please enter the number in which factorial you want to find");
-    scanf("%d", &n);
+    printf("please enter the number in which factorial you want to find \n"); //5
+    scanf("%d", &n); //5
 
     if (n <= 0)
     {
-        printf("The Number Is Invalid Please Enter The Number Above 0");
+        printf("The Number Is Invalid Please Enter The Number Above 0 \n");
     }
     else
     {
-        for (i = n; i > 0; i--)
+        for (i = n; i > 0; i--) //0
         {
             fact = fact * i;
         }
