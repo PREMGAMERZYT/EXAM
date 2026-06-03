@@ -5,23 +5,24 @@ int main()
 
     int a, b, c;
 
-    scanf("%d %d %d", &a, &b, &c);
+    printf("enter any Three Numbers below \n");
+    scanf("%d %d %d", a, b, c);
 
     if (a > b && a > c)
     {
-        printf("The Number %d Is Graters Number ", a);
+        printf("The largest number amoung 3 is %d", a);
     }
     else if (b > a && b > c)
     {
-        printf("The Number %d Is the Gratest Number", b);
+        printf("The largest number amoung 3 is %d", b);
     }
     else if (c > a && c > b)
     {
-        printf("The Number %d Is The Gratest Number", c);
+        printf("the gratest Number amoung 3 is %d", c);
     }
     else
     {
-        printf("invlaid");
+        printf("invalid");
     }
 
     return 0;
